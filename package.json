@@ -1,6 +1,6 @@
 {
   "name": "qrcode-pro",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A powerful QR code generator with weird and incredible features - custom styling, gradients, logos, animations, and more!",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
