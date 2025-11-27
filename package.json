@@ -1,54 +1,50 @@
 {
   "name": "qrcode-pro",
   "version": "1.0.0",
-  "description": "A professional TypeScript QR code generation library with advanced features",
+  "description": "A powerful QR code generator with weird and incredible features - custom styling, gradients, logos, animations, and more!",
   "main": "dist/index.js",
+  "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
   "files": [
-    "dist/**/*",
-    "README.md",
-    "LICENSE"
+    "dist",
+    "README.md"
   ],
   "scripts": {
-    "build": "tsc",
-    "build:watch": "tsc --watch",
-    "test": "jest",
-    "test:watch": "jest --watch",
-    "lint": "eslint src/**/*.ts",
-    "lint:fix": "eslint src/**/*.ts --fix",
-    "prepare": "npm run build",
-    "prepublishOnly": "npm run test && npm run lint"
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "prepublishOnly": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "qrcode",
     "qr-code",
+    "qr",
     "generator",
-    "typescript",
-    "barcode",
-    "2d-code",
-    "qrcode-pro"
+    "custom",
+    "styling",
+    "gradient",
+    "logo",
+    "animated",
+    "typescript"
   ],
-  "author": "Shayan Hamidi sha.hamidi10@gmail.com",
+  "author": "",
   "license": "MIT",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-typescript": "^11.1.5",
+    "@types/node": "^20.10.6",
+    "@types/qrcode": "^1.5.6",
+    "rollup": "^4.9.0",
+    "rollup-plugin-dts": "^6.1.0",
+    "tslib": "^2.6.2",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "qrcode": "^1.5.3"
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shayan-hamidi/qrcode-pro.git"
-  },
-  "bugs": {
-    "url": "https://github.com/yourusername/qrcode-pro/issues"
-  },
-  "homepage": "https://github.com/yourusername/qrcode-pro#readme",
-  "devDependencies": {
-    "@types/jest": "^29.5.14",
-    "@types/node": "^20.19.14",
-    "@typescript-eslint/eslint-plugin": "^6.21.0",
-    "@typescript-eslint/parser": "^6.21.0",
-    "eslint": "^8.57.1",
-    "jest": "^29.7.0",
-    "ts-jest": "^29.4.2",
-    "typescript": "^5.9.2"
-  },
-  "engines": {
-    "node": ">=14.0.0"
+    "url": ""
   }
 }

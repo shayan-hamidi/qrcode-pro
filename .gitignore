@@ -1,8 +1,11 @@
 node_modules/
 dist/
-coverage/
 *.log
 .DS_Store
 .env
-.vscode/
-.idea/
+.env.local
+*.tsbuildinfo
+example/node_modules/
+example/dist/
+example/.vite/
+
